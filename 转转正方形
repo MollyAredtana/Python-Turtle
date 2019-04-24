@@ -1,0 +1,16 @@
+import turtle
+
+myTurtle = turtle.Turtle()
+myWin = turtle.Screen()
+
+def drawSpiral(myTurtle, lineLen):
+    if lineLen > 0:
+        myTurtle.color('red')
+        myTurtle.forward(lineLen/2)
+        myTurtle.color('black')
+        myTurtle.forward(lineLen / 2)
+        myTurtle.right(90)
+        drawSpiral(myTurtle,lineLen-5)
+
+drawSpiral(myTurtle,250)
+myWin.exitonclick()
