@@ -1,0 +1,14 @@
+import turtle as t
+import time
+t.speed(10)
+t.screensize(800, 600, "seashell")
+t.setup()
+t.setup(width = 800, height = 800, startx = 0, starty = 0)
+t.pensize(3)
+t.color("red", "yellow")
+t.begin_fill()
+for _ in range(60):
+    t.forward(200)
+    t.left(170)
+t.end_fill()
+time.sleep(0.8)
